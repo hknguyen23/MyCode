@@ -2,13 +2,16 @@ import React from 'react';
 import Row from '../Row';
 import Square from '../Square';
 
-function Board({squares, winLine, onClick, nCol, nRow}) {
-  const renderSquare = (i) => {  
+function Board({squares, winLine, onClick, nCol, nRow, latestPos}) {
+  const renderSquare = (i) => {
+    console.log(i);
+    console.log(latestPos);
     return (
       <Square
         key={i}
         value={squares[i]}
         isHighlight={winLine && winLine.includes(i)}
+        isLatest={latestPos === i}
         onClick={() => onClick(i)}
       />
     );

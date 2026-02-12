@@ -141,6 +141,7 @@ function Game() {
             winLine={winInfo.winLine}
             nCol = {nCol}
             nRow = {nRow}
+            latestPos={current.position}
           />
         </div>
         <div className="game-info">
