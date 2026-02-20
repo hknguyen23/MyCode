@@ -1,0 +1,36 @@
+.legend {
+  padding: 10px 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background: #f9f9f9;
+  min-width: 160px;
+  margin-top: 20px;
+}
+
+.legend h3 {
+  margin-top: 0;
+  text-align: center;
+}
+
+.legend-row {
+  display: flex;
+  align-items: center;
+  margin: 6px 0;
+}
+
+.legend-short {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: white;
+  border: 1px solid #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  margin-right: 8px;
+}
+
+.legend-name {
+  font-size: 14px;
+}

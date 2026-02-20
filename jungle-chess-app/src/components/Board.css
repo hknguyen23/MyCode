@@ -1,0 +1,111 @@
+.board {
+  display: grid;
+  grid-template-columns: repeat(7, 60px);
+  grid-template-rows: repeat(9, 60px);
+  gap: 2px;
+  width: max-content;
+  margin: 20px auto;
+}
+
+.tile {
+  position: relative; /* important */
+  width: 60px;
+  height: 60px;
+  border: 1px solid #333;
+}
+
+/* Tile Types */
+
+.land {
+  background-color: #4CAF50; /* green */
+}
+
+.water {
+  background-color: #2196F3; /* blue */
+}
+
+.bridge {
+  background-color: #b88979; /* light brown */
+}
+
+.trap {
+  background-color: #f86371; /* light red */
+}
+
+.den {
+  background-color: #FFEB3B; /* yellow */
+}
+
+/* Wrapper to position highlight under piece */
+.piece-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* White circle under selected piece */
+.selected-ring {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  border-radius: 50%;
+  opacity: 0.25;
+  z-index: 0;
+}
+
+.piece {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 18px;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 1;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+/* Red team ring */
+.piece.red {
+  border: 2px solid #c62828;
+  color: #c62828;
+}
+
+/* Blue team ring */
+.piece.blue {
+  border: 2px solid #1565c0;
+  color: #1565c0;
+}
+
+/* Valid move white circle */
+.move-dot {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background-color: white;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0.85;
+}
+
+.capture-indicator {
+  position: absolute;
+  width: 46px;
+  height: 46px;
+  border: 3px solid red;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
