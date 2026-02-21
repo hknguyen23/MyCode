@@ -25,7 +25,7 @@
 }
 
 .bridge {
-  background-color: #b88979; /* light brown */
+  background-color: #8e523e; /* brown */
 }
 
 .trap {
@@ -75,14 +75,21 @@
 
 /* Red team ring */
 .piece.red {
-  border: 2px solid #c62828;
+  border: 3px solid #c62828;
   color: #c62828;
 }
 
 /* Blue team ring */
 .piece.blue {
-  border: 2px solid #1565c0;
+  border: 3px solid #1565c0;
   color: #1565c0;
+}
+
+.piece-img {
+  width: 70%;
+  height: 70%;
+  object-fit: contain;
+  pointer-events: none;
 }
 
 /* Valid move white circle */

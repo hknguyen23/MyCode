@@ -1,6 +1,9 @@
 import React from "react";
 import "./Board.css";
 
+const getPieceImage = (name) =>
+  require(`../assets/${name.toLowerCase()}.png`);
+
 export default function Board({
   board,
   selected,
@@ -43,7 +46,11 @@ export default function Board({
                   {isSelected && <div className="selected-ring" />}
 
                   <div className={`piece ${tile.piece.player}`}>
-                    {tile.piece.name[0]}
+                    <img
+                      src={getPieceImage(tile.piece.name)}
+                      alt={tile.piece.name}
+                      className="piece-img"
+                    />
                   </div>
                 </div>
               )}
