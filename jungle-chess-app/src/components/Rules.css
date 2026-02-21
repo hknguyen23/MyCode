@@ -1,0 +1,19 @@
+.rules {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background: #f9f9f9;
+  max-width: 250px;
+  margin-top: 20px;
+}
+
+.rules h3 {
+  margin-top: 0;
+  text-align: center;
+}
+
+.rules ul {
+  padding-left: 18px;
+  font-size: 13px;
+  line-height: 1.4;
+}

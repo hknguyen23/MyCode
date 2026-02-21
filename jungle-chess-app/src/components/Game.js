@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Board from "./Board";
 import Legend from "./Legend";
+import Rules from "./Rules";
 import { createInitialBoard } from "../services/board";
 import { getValidMoves, movePiece } from "../services/move";
 import "./Game.css";
@@ -90,8 +91,8 @@ export default function Game() {
       </div>      
 
       <div className="game-layout">
-        <div className="left-space" />
-        
+        <Rules />
+
         <Board
           board={board}
           selected={selected}
