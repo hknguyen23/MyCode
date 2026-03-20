@@ -4,8 +4,6 @@ import Square from '../Square';
 
 function Board({squares, winLine, onClick, nCol, nRow, latestPos}) {
   const renderSquare = (i) => {
-    console.log(i);
-    console.log(latestPos);
     return (
       <Square
         key={i}

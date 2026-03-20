@@ -63,6 +63,7 @@ ol, ul {
 
 .game-info {
   margin-left: 20px;
+  overflow-y: auto;
 }
 
 .selected-move {

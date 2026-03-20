@@ -128,7 +128,8 @@ function Game() {
         <div>Column or row size should be a number equal or bigger than 3</div>
       </div>
     );
-  }    
+  }
+  let gameInfoHeight = `${nRow * 34}px`;
   return (
     <div>
       {element}
@@ -144,7 +145,7 @@ function Game() {
             latestPos={current.position}
           />
         </div>
-        <div className="game-info">
+        <div className="game-info" style={{height: gameInfoHeight}}>
           <div>{status}</div>
           <div>
             <button onClick={() => sortButtonClicked()}>
